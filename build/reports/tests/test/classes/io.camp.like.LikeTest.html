@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - 좋아요 테스트</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>좋아요 테스트</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/io.camp.like.html">io.camp.like</a> &gt; LikeTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2.454s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">좋아요_테스트()</td>
+<td class="success">2.454s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>21:43:13.070 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [io.camp.like.LikeTest]: LikeTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:43:13.219 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration io.camp.CampApplication for test class io.camp.like.LikeTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.2)
+
+2024-08-15T21:43:13.588+09:00  WARN 48757 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/home/wo/.gradle/caches/modules-2/files-2.1/org.json/json/20240303/ebb88e8fb5122b7506d5cf1d69f1ccdb790d22a/json-20240303.jar!/org/json/JSONObject.class
+	jar:file:/home/wo/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2024-08-15T21:43:13.614+09:00  INFO 48757 --- [    Test worker] io.camp.like.LikeTest                    : Starting LikeTest using Java 17.0.12 with PID 48757 (started by wo in /home/wo/DEV/TheCampBack/camp_backend)
+2024-08-15T21:43:13.616+09:00  INFO 48757 --- [    Test worker] io.camp.like.LikeTest                    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-08-15T21:43:14.435+09:00  INFO 48757 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-08-15T21:43:14.535+09:00  INFO 48757 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 14 JPA repository interfaces.
+2024-08-15T21:43:15.055+09:00  INFO 48757 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-08-15T21:43:15.092+09:00  INFO 48757 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.0.0.Final
+2024-08-15T21:43:15.215+09:00  WARN 48757 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2024-08-15T21:43:15.293+09:00  INFO 48757 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-08-15T21:43:15.528+09:00  INFO 48757 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4efed0e0
+2024-08-15T21:43:15.530+09:00  INFO 48757 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-08-15T21:43:15.570+09:00  INFO 48757 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2024-08-15T21:43:16.707+09:00  INFO 48757 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-08-15T21:43:16.714+09:00  INFO 48757 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: 
+    select
+        u1_0.seq,
+        u1_0.birthday,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.gender,
+        u1_0.modified_at,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role 
+    from
+        user u1_0 
+    where
+        u1_0.email=?
+2024-08-15T21:43:17.542+09:00  WARN 48757 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-08-15T21:43:17.563+09:00  INFO 48757 --- [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name jwtUserDetailsService
+2024-08-15T21:43:18.825+09:00  INFO 48757 --- [    Test worker] io.camp.like.LikeTest                    : Started LikeTest in 5.485 seconds (process running for 6.516)
+Hibernate: 
+    insert 
+    into
+        user
+        (birthday, created_at, email, gender, modified_at, name, password, phone_number, role) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        user
+        (birthday, created_at, email, gender, modified_at, name, password, phone_number, role) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        user
+        (birthday, created_at, email, gender, modified_at, name, password, phone_number, role) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        user
+        (birthday, created_at, email, gender, modified_at, name, password, phone_number, role) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        user
+        (birthday, created_at, email, gender, modified_at, name, password, phone_number, role) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        campsite
+        (addr1, addr2, allar, animal_cmg_cl, bizrno, brazier_cl, carav_inner_fclty, carav_site_co, content_id, createdtime, direction, do_nm, faclt_nm, feature_nm, first_image_url, glamp_inner_fclty, glamp_site_co, homepage, induty, intro, lct_cl, line_intro, mapx, mapy, modifiedtime, oper_de_cl, oper_pd_cl, posbl_fclty_cl, posbl_fclty_etc, resve_url, sbrs_cl, sbrs_etc, sigungu_nm, site_bottom_cl1, site_bottom_cl2, site_bottom_cl3, site_bottom_cl4, site_bottom_cl5, swrm_co, tel, thema_enyrn_cl, toilet_co, tooltip, trsagnt_no, wtrpl_co, zipcode) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        campsite
+        (addr1, addr2, allar, animal_cmg_cl, bizrno, brazier_cl, carav_inner_fclty, carav_site_co, content_id, createdtime, direction, do_nm, faclt_nm, feature_nm, first_image_url, glamp_inner_fclty, glamp_site_co, homepage, induty, intro, lct_cl, line_intro, mapx, mapy, modifiedtime, oper_de_cl, oper_pd_cl, posbl_fclty_cl, posbl_fclty_etc, resve_url, sbrs_cl, sbrs_etc, sigungu_nm, site_bottom_cl1, site_bottom_cl2, site_bottom_cl3, site_bottom_cl4, site_bottom_cl5, swrm_co, tel, thema_enyrn_cl, toilet_co, tooltip, trsagnt_no, wtrpl_co, zipcode) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        campsite
+        (addr1, addr2, allar, animal_cmg_cl, bizrno, brazier_cl, carav_inner_fclty, carav_site_co, content_id, createdtime, direction, do_nm, faclt_nm, feature_nm, first_image_url, glamp_inner_fclty, glamp_site_co, homepage, induty, intro, lct_cl, line_intro, mapx, mapy, modifiedtime, oper_de_cl, oper_pd_cl, posbl_fclty_cl, posbl_fclty_etc, resve_url, sbrs_cl, sbrs_etc, sigungu_nm, site_bottom_cl1, site_bottom_cl2, site_bottom_cl3, site_bottom_cl4, site_bottom_cl5, swrm_co, tel, thema_enyrn_cl, toilet_co, tooltip, trsagnt_no, wtrpl_co, zipcode) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        campsite
+        (addr1, addr2, allar, animal_cmg_cl, bizrno, brazier_cl, carav_inner_fclty, carav_site_co, content_id, createdtime, direction, do_nm, faclt_nm, feature_nm, first_image_url, glamp_inner_fclty, glamp_site_co, homepage, induty, intro, lct_cl, line_intro, mapx, mapy, modifiedtime, oper_de_cl, oper_pd_cl, posbl_fclty_cl, posbl_fclty_etc, resve_url, sbrs_cl, sbrs_etc, sigungu_nm, site_bottom_cl1, site_bottom_cl2, site_bottom_cl3, site_bottom_cl4, site_bottom_cl5, swrm_co, tel, thema_enyrn_cl, toilet_co, tooltip, trsagnt_no, wtrpl_co, zipcode) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        campsite
+        (addr1, addr2, allar, animal_cmg_cl, bizrno, brazier_cl, carav_inner_fclty, carav_site_co, content_id, createdtime, direction, do_nm, faclt_nm, feature_nm, first_image_url, glamp_inner_fclty, glamp_site_co, homepage, induty, intro, lct_cl, line_intro, mapx, mapy, modifiedtime, oper_de_cl, oper_pd_cl, posbl_fclty_cl, posbl_fclty_etc, resve_url, sbrs_cl, sbrs_etc, sigungu_nm, site_bottom_cl1, site_bottom_cl2, site_bottom_cl3, site_bottom_cl4, site_bottom_cl5, swrm_co, tel, thema_enyrn_cl, toilet_co, tooltip, trsagnt_no, wtrpl_co, zipcode) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        campsite
+        (addr1, addr2, allar, animal_cmg_cl, bizrno, brazier_cl, carav_inner_fclty, carav_site_co, content_id, createdtime, direction, do_nm, faclt_nm, feature_nm, first_image_url, glamp_inner_fclty, glamp_site_co, homepage, induty, intro, lct_cl, line_intro, mapx, mapy, modifiedtime, oper_de_cl, oper_pd_cl, posbl_fclty_cl, posbl_fclty_etc, resve_url, sbrs_cl, sbrs_etc, sigungu_nm, site_bottom_cl1, site_bottom_cl2, site_bottom_cl3, site_bottom_cl4, site_bottom_cl5, swrm_co, tel, thema_enyrn_cl, toilet_co, tooltip, trsagnt_no, wtrpl_co, zipcode) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        campsite
+        (addr1, addr2, allar, animal_cmg_cl, bizrno, brazier_cl, carav_inner_fclty, carav_site_co, content_id, createdtime, direction, do_nm, faclt_nm, feature_nm, first_image_url, glamp_inner_fclty, glamp_site_co, homepage, induty, intro, lct_cl, line_intro, mapx, mapy, modifiedtime, oper_de_cl, oper_pd_cl, posbl_fclty_cl, posbl_fclty_etc, resve_url, sbrs_cl, sbrs_etc, sigungu_nm, site_bottom_cl1, site_bottom_cl2, site_bottom_cl3, site_bottom_cl4, site_bottom_cl5, swrm_co, tel, thema_enyrn_cl, toilet_co, tooltip, trsagnt_no, wtrpl_co, zipcode) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        campsite
+        (addr1, addr2, allar, animal_cmg_cl, bizrno, brazier_cl, carav_inner_fclty, carav_site_co, content_id, createdtime, direction, do_nm, faclt_nm, feature_nm, first_image_url, glamp_inner_fclty, glamp_site_co, homepage, induty, intro, lct_cl, line_intro, mapx, mapy, modifiedtime, oper_de_cl, oper_pd_cl, posbl_fclty_cl, posbl_fclty_etc, resve_url, sbrs_cl, sbrs_etc, sigungu_nm, site_bottom_cl1, site_bottom_cl2, site_bottom_cl3, site_bottom_cl4, site_bottom_cl5, swrm_co, tel, thema_enyrn_cl, toilet_co, tooltip, trsagnt_no, wtrpl_co, zipcode) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        campsite
+        (addr1, addr2, allar, animal_cmg_cl, bizrno, brazier_cl, carav_inner_fclty, carav_site_co, content_id, createdtime, direction, do_nm, faclt_nm, feature_nm, first_image_url, glamp_inner_fclty, glamp_site_co, homepage, induty, intro, lct_cl, line_intro, mapx, mapy, modifiedtime, oper_de_cl, oper_pd_cl, posbl_fclty_cl, posbl_fclty_etc, resve_url, sbrs_cl, sbrs_etc, sigungu_nm, site_bottom_cl1, site_bottom_cl2, site_bottom_cl3, site_bottom_cl4, site_bottom_cl5, swrm_co, tel, thema_enyrn_cl, toilet_co, tooltip, trsagnt_no, wtrpl_co, zipcode) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        campsite
+        (addr1, addr2, allar, animal_cmg_cl, bizrno, brazier_cl, carav_inner_fclty, carav_site_co, content_id, createdtime, direction, do_nm, faclt_nm, feature_nm, first_image_url, glamp_inner_fclty, glamp_site_co, homepage, induty, intro, lct_cl, line_intro, mapx, mapy, modifiedtime, oper_de_cl, oper_pd_cl, posbl_fclty_cl, posbl_fclty_etc, resve_url, sbrs_cl, sbrs_etc, sigungu_nm, site_bottom_cl1, site_bottom_cl2, site_bottom_cl3, site_bottom_cl4, site_bottom_cl5, swrm_co, tel, thema_enyrn_cl, toilet_co, tooltip, trsagnt_no, wtrpl_co, zipcode) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-08-15T21:43:20.450+09:00  INFO 48757 --- [    Test worker] i.c.c.service.impl.CampSiteServiceImpl   : api 데이터가 등록되었습니다.
+Hibernate: 
+    select
+        c1_0.seq,
+        c1_0.addr1,
+        c1_0.addr2,
+        c1_0.allar,
+        c1_0.animal_cmg_cl,
+        c1_0.bizrno,
+        c1_0.brazier_cl,
+        c1_0.carav_inner_fclty,
+        c1_0.carav_site_co,
+        c1_0.content_id,
+        c1_0.createdtime,
+        c1_0.direction,
+        c1_0.do_nm,
+        c1_0.faclt_nm,
+        c1_0.feature_nm,
+        c1_0.first_image_url,
+        c1_0.glamp_inner_fclty,
+        c1_0.glamp_site_co,
+        c1_0.homepage,
+        c1_0.induty,
+        c1_0.intro,
+        c1_0.lct_cl,
+        c1_0.line_intro,
+        c1_0.mapx,
+        c1_0.mapy,
+        c1_0.modifiedtime,
+        c1_0.oper_de_cl,
+        c1_0.oper_pd_cl,
+        c1_0.posbl_fclty_cl,
+        c1_0.posbl_fclty_etc,
+        c1_0.resve_url,
+        c1_0.sbrs_cl,
+        c1_0.sbrs_etc,
+        c1_0.sigungu_nm,
+        c1_0.site_bottom_cl1,
+        c1_0.site_bottom_cl2,
+        c1_0.site_bottom_cl3,
+        c1_0.site_bottom_cl4,
+        c1_0.site_bottom_cl5,
+        c1_0.swrm_co,
+        c1_0.tel,
+        c1_0.thema_enyrn_cl,
+        c1_0.toilet_co,
+        c1_0.tooltip,
+        c1_0.trsagnt_no,
+        c1_0.wtrpl_co,
+        c1_0.zipcode,
+        z1_0.campsite_seq,
+        z1_0.seq,
+        z1_0.best_peak_season_price,
+        z1_0.checkin,
+        z1_0.checkout,
+        z1_0.intro,
+        z1_0.off_season_price,
+        z1_0.peak_season_price,
+        z1_0.title 
+    from
+        campsite c1_0 
+    left join
+        zone z1_0 
+            on c1_0.seq=z1_0.campsite_seq 
+    where
+        c1_0.seq=?
+Hibernate: 
+    insert 
+    into
+        review
+        (campsite_seq, content, created_at, is_deleted, modified_at, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?)
+2024-08-15T21:43:20.832+09:00  WARN 48757 --- [pool-2-thread-5] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.lock.timeout], use [jakarta.persistence.lock.timeout] instead
+2024-08-15T21:43:20.832+09:00  WARN 48757 --- [pool-2-thread-4] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.lock.timeout], use [jakarta.persistence.lock.timeout] instead
+2024-08-15T21:43:20.832+09:00  WARN 48757 --- [pool-2-thread-2] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.lock.timeout], use [jakarta.persistence.lock.timeout] instead
+2024-08-15T21:43:20.833+09:00  WARN 48757 --- [pool-2-thread-3] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.lock.timeout], use [jakarta.persistence.lock.timeout] instead
+2024-08-15T21:43:20.835+09:00  WARN 48757 --- [pool-2-thread-1] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.lock.timeout], use [jakarta.persistence.lock.timeout] instead
+Hibernate: 
+    select
+        l1_0.like_id,
+        l1_0.is_like,
+        l1_0.review_id,
+        l1_0.user_id 
+    from
+        review r1_0 
+    left join
+        likes l1_0 
+            on r1_0.review_id=l1_0.review_id 
+    where
+        l1_0.user_id=? 
+        and l1_0.review_id=?
+Hibernate: 
+    select
+        l1_0.like_id,
+        l1_0.is_like,
+        l1_0.review_id,
+        l1_0.user_id 
+    from
+        review r1_0 
+    left join
+        likes l1_0 
+            on r1_0.review_id=l1_0.review_id 
+    where
+        l1_0.user_id=? 
+        and l1_0.review_id=?
+Hibernate: 
+    select
+        l1_0.like_id,
+        l1_0.is_like,
+        l1_0.review_id,
+        l1_0.user_id 
+    from
+        review r1_0 
+    left join
+        likes l1_0 
+            on r1_0.review_id=l1_0.review_id 
+    where
+        l1_0.user_id=? 
+        and l1_0.review_id=?
+Hibernate: 
+    select
+        l1_0.like_id,
+        l1_0.is_like,
+        l1_0.review_id,
+        l1_0.user_id 
+    from
+        review r1_0 
+    left join
+        likes l1_0 
+            on r1_0.review_id=l1_0.review_id 
+    where
+        l1_0.user_id=? 
+        and l1_0.review_id=?
+Hibernate: 
+    select
+        l1_0.like_id,
+        l1_0.is_like,
+        l1_0.review_id,
+        l1_0.user_id 
+    from
+        review r1_0 
+    left join
+        likes l1_0 
+            on r1_0.review_id=l1_0.review_id 
+    where
+        l1_0.user_id=? 
+        and l1_0.review_id=?
+Hibernate: 
+    select
+        r1_0.review_id,
+        r1_0.campsite_seq,
+        r1_0.content,
+        r1_0.created_at,
+        r1_0.is_deleted,
+        r1_0.modified_at,
+        r1_0.user_id 
+    from
+        review r1_0 
+    where
+        r1_0.review_id=?
+Hibernate: 
+    select
+        r1_0.review_id,
+        r1_0.campsite_seq,
+        r1_0.content,
+        r1_0.created_at,
+        r1_0.is_deleted,
+        r1_0.modified_at,
+        r1_0.user_id 
+    from
+        review r1_0 
+    where
+        r1_0.review_id=?
+Hibernate: 
+    select
+        r1_0.review_id,
+        r1_0.campsite_seq,
+        r1_0.content,
+        r1_0.created_at,
+        r1_0.is_deleted,
+        r1_0.modified_at,
+        r1_0.user_id 
+    from
+        review r1_0 
+    where
+        r1_0.review_id=?
+Hibernate: 
+    select
+        r1_0.review_id,
+        r1_0.campsite_seq,
+        r1_0.content,
+        r1_0.created_at,
+        r1_0.is_deleted,
+        r1_0.modified_at,
+        r1_0.user_id 
+    from
+        review r1_0 
+    where
+        r1_0.review_id=?
+Hibernate: 
+    select
+        r1_0.review_id,
+        r1_0.campsite_seq,
+        r1_0.content,
+        r1_0.created_at,
+        r1_0.is_deleted,
+        r1_0.modified_at,
+        r1_0.user_id 
+    from
+        review r1_0 
+    where
+        r1_0.review_id=?
+Hibernate: 
+    insert 
+    into
+        likes
+        (is_like, review_id, user_id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        likes
+        (is_like, review_id, user_id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        likes
+        (is_like, review_id, user_id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        likes
+        (is_like, review_id, user_id) 
+    values
+        (?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        likes
+        (is_like, review_id, user_id) 
+    values
+        (?, ?, ?)
+2024-08-15T21:43:21.190+09:00  WARN 48757 --- [pool-2-thread-2] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.lock.timeout], use [jakarta.persistence.lock.timeout] instead
+2024-08-15T21:43:21.191+09:00  WARN 48757 --- [pool-2-thread-5] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.lock.timeout], use [jakarta.persistence.lock.timeout] instead
+2024-08-15T21:43:21.190+09:00  WARN 48757 --- [pool-2-thread-4] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.lock.timeout], use [jakarta.persistence.lock.timeout] instead
+2024-08-15T21:43:21.190+09:00  WARN 48757 --- [pool-2-thread-3] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.lock.timeout], use [jakarta.persistence.lock.timeout] instead
+2024-08-15T21:43:21.191+09:00  WARN 48757 --- [pool-2-thread-1] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.lock.timeout], use [jakarta.persistence.lock.timeout] instead
+Hibernate: 
+    select
+        (select
+            sum(case 
+                when l1_0.is_like=? then ? 
+                else 0 
+            end) 
+        from
+            likes l1_0 
+        where
+            l1_0.review_id=r1_0.review_id) 
+    from
+        review r1_0 
+    where
+        r1_0.review_id=? 
+        and r1_0.is_deleted=?
+Hibernate: 
+    select
+        (select
+            sum(case 
+                when l1_0.is_like=? then ? 
+                else 0 
+            end) 
+        from
+            likes l1_0 
+        where
+            l1_0.review_id=r1_0.review_id) 
+    from
+        review r1_0 
+    where
+        r1_0.review_id=? 
+        and r1_0.is_deleted=?
+Hibernate: 
+    select
+        (select
+            sum(case 
+                when l1_0.is_like=? then ? 
+                else 0 
+            end) 
+        from
+            likes l1_0 
+        where
+            l1_0.review_id=r1_0.review_id) 
+    from
+        review r1_0 
+    where
+        r1_0.review_id=? 
+        and r1_0.is_deleted=?
+Hibernate: 
+    select
+        (select
+            sum(case 
+                when l1_0.is_like=? then ? 
+                else 0 
+            end) 
+        from
+            likes l1_0 
+        where
+            l1_0.review_id=r1_0.review_id) 
+    from
+        review r1_0 
+    where
+        r1_0.review_id=? 
+        and r1_0.is_deleted=?
+Hibernate: 
+    select
+        (select
+            sum(case 
+                when l1_0.is_like=? then ? 
+                else 0 
+            end) 
+        from
+            likes l1_0 
+        where
+            l1_0.review_id=r1_0.review_id) 
+    from
+        review r1_0 
+    where
+        r1_0.review_id=? 
+        and r1_0.is_deleted=?
+2024-08-15T21:43:21.272+09:00  WARN 48757 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.lock.timeout], use [jakarta.persistence.lock.timeout] instead
+Hibernate: 
+    select
+        r1_0.review_id,
+        r1_0.content,
+        u2_0.name,
+        sum(case 
+            when l1_0.is_like=? then ? 
+            else 0 
+        end),
+        c2_0.faclt_nm,
+        u2_0.email,
+        r1_0.user_id,
+        c1_0.seq 
+    from
+        campsite c1_0 
+    join
+        review r1_0 
+            on c1_0.seq=r1_0.campsite_seq 
+    join
+        campsite c2_0 
+            on c2_0.seq=r1_0.campsite_seq 
+    join
+        user u2_0 
+            on u2_0.seq=r1_0.user_id 
+    join
+        user u1_0 
+            on r1_0.user_id=u1_0.seq 
+    left join
+        likes l1_0 
+            on r1_0.review_id=l1_0.review_id 
+    where
+        r1_0.review_id=? 
+        and r1_0.is_deleted=? 
+    group by
+        c1_0.seq,
+        r1_0.review_id
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.8</a> at 2024. 8. 15. 오후 9:43:21</p>
+</div>
+</div>
+</body>
+</html>
